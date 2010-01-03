@@ -61,10 +61,6 @@ has 'lexicon_map' => (
     }
 );
 
-__PACKAGE__->meta->make_immutable;
-
-no Moose;
-
 sub BUILDARGS {
     my ($class, %args) = @_;
 
@@ -233,6 +229,10 @@ sub _build_storage {
         return $class->new();
     }
 }
+
+__PACKAGE__->meta->make_immutable;
+
+no Moose;
 
 1;
 
