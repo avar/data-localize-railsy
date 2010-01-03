@@ -25,5 +25,6 @@ WriteMakefile(
     PREREQ_PM     => {
         # Catalyst/Plugin/Railsy.pm
         'Data::Localize' => '0.00011',
+        'Moose' => '0.93',
     },
 );
