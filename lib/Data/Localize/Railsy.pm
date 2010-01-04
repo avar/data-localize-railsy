@@ -7,7 +7,7 @@ use File::Temp qw(tempdir);
 use Data::Localize::Storage::Hash;
 use YAML::Any qw(LoadFile);
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 with 'Data::Localize::Localizer';
 
